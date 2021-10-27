@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="icon" href="../Assets/Loguitoico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <header>
+        <ul>
+
+            <li><img src="../Assets/Loguitaname.png" id="logo"></li>
+            <li class="right"><a href="/Pages/Signin.html">
+                    <div class="button">Ingresar</div>
+                </a></li>
+            <li class="right"><a href="https://ignaciolopezlehner.github.io/">
+                    <div class="button">Inicio</div>
+                </a></li>
+        </ul>
+    </header>
+
+
+    <p class="topic"> Completá los datos para registrarte</p>
+
+
+    <form action="https://www.w3schools.com/action_page.php" method="POST" target="__blank">
+        <fieldset>
+            <div class="form">
+                <input type="text" placeholder="Apellido" required>
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" required placeholder="Email">
+                <input type="password" required id="date-1" placeholder="Contraseña">
+                <input type="password" required id="date-2" placeholder="Repetir Contraseña">
+                <p>Fecha de nacimiento:</p>
+                <div class="date">
+                <input type="number"  placeholder="Día" required  min="1" max="31" >
+                <input type="number"  placeholder="Mes" required  min="1" max="12">
+                <input type="number"  placeholder="Año" required id="date-3" min="1900" max="2021">
+            </div>
+                <input type="checkbox" required><a href="/Pages/Terms.html" target="__blank">Acepto los términos y
+                    condiciones.</a>
+                <input type="submit" value="Registrarse" onclick="Validation()">
+            </div>
+
+        </fieldset>
+    </form>
+    <script type="text/javascript" src="../Js/Validation.js"></script>
+
+</body>
+
+</html>
+
+<!--<label for="nacimiento">Fecha de nacimiento:</label>
+<input type="date" required>-->
